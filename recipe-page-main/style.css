@@ -1,0 +1,155 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f5ebe6;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.recipe-content {
+  background-color: white;
+  border-radius: 20px;
+  padding: 20px;
+  max-width: 600px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.main-image img {
+  width: 100%;
+  border-radius: 20px;
+}
+
+h1 {
+  font-size: 2em;
+  margin-top: 20px;
+  color: #333;
+}
+
+p {
+  font-size: 1em;
+  color: #666;
+  line-height: 1.6;
+}
+
+.preparation-container,
+.ingredients-container,
+.instructions-container,
+.nutrition-container {
+  margin-top: 20px;
+}
+
+.preparation-heading,
+.ingredients-heading,
+.instructions-heading,
+.nutrition-heading {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #6d4b38;
+}
+
+.preparation-content,
+.ingredients-content,
+.instructions-content,
+.nutrition-content {
+  padding: 0;
+  margin: 0;
+}
+ 
+
+.preparation-content li,
+.ingredients-content li,
+.instructions-content li {
+
+  font-size: 1em;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.instructions-container ol {
+  padding-left: 20px;
+}
+
+.instructions-container ol li {
+  margin-bottom: 10px;
+}
+
+.instructions-container span {
+  font-weight: bold;
+}
+
+.nutrition-description {
+  font-size: 0.9em;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.nutrition-values {
+  display: flex;
+  flex-direction: column;
+}
+
+.nutrition-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.nutrition-value {
+  font-weight: bold;
+  color: #b92e34;
+}
+
+.attribution {
+  text-align: center;
+  font-size: 0.9em;
+  color: #666;
+  margin-top: 20px;
+}
+
+.attribution a {
+  color: #b92e34;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .recipe-content {
+    padding: 10px;
+    border-radius: 10px;
+  }
+
+  h1 {
+    font-size: 1.5em;
+    margin-top: 10px;
+  }
+
+  p {
+    font-size: 0.9em;
+  }
+
+  .preparation-heading,
+  .ingredients-heading,
+  .instructions-heading,
+  .nutrition-heading {
+    font-size: 1.2em;
+  }
+
+  .preparation-content li,
+  .ingredients-content li,
+  .instructions-content li {
+    font-size: 0.9em;
+  }
+
+  .nutrition-item {
+    padding: 5px 0;
+  }
+
+  .nutrition-value {
+    font-size: 0.9em;
+  }
+}
